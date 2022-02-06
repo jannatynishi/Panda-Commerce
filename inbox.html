@@ -12,7 +12,7 @@
 <body class="container">
     <!-- Header starts header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <img src="images/logo.png" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +36,9 @@
                 </ul>
             </div>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item " style="background-color: #FCEBE9;">
+                <div class="carousel-item active" style="background-color: #FCEBE9;">
                     <div class="row p-5">
                         <div class="col-lg-7 align-self-center ps-2">
                             <h1>Cool Dude Headphone</h1>
@@ -55,7 +55,7 @@
                     </div>
 
                 </div>
-                <div class="carousel-item active" style="background-color: #FCEBE9;">
+                <div class="carousel-item" style="background-color: #FCEBE9;">
                     <div class="row p-5">
                         <div class="col-lg-7 align-self-center ps-2">
                             <h1>Mega LCD TV for Sports</h1>
@@ -67,7 +67,7 @@
                                 Now</button>
                         </div>
                         <div class="col-lg-5">
-                            <img class="d-block w-100" src="images/banner-images/headphone.png" alt="First slide">
+                            <img class="d-block w-100" src="images/banner-images/tv.png" alt="First slide">
                         </div>
                     </div>
 
@@ -90,14 +90,14 @@
 
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-            </a>
+                <span class="visually-hidden">Next</span>
+              </button>
         </div>
 
     </header>
@@ -136,56 +136,64 @@
 
         </section>
         <!-- Shoes Container -->
-      <section>
-          <div class="p-5">
-              <h1>Shoes</h1>
-          </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="images/shoes/shoe-1.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Supply 350</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, alias tempora quisquam veniam error adipisci debitis, nihil doloribus dignissimos possimus quasi. Soluta quos veritatis nobis numquam sequi voluptate repellat!</p>
-                        <button class="btn-buy-now border-0 text-light"
-                            style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
-                            Now</button>
+        <section>
+            <div class="p-5">
+                <h1>Shoes</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card border-0 shadow h-100">
+                        <img src="images/shoes/shoe-1.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Supply 350</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                molestias, alias tempora quisquam veniam error adipisci debitis, nihil doloribus
+                                dignissimos possimus quasi. Soluta quos veritatis nobis numquam sequi voluptate
+                                repellat!</p>
+                            <button class="btn-buy-now border-0 text-light"
+                                style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
+                                Now</button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="images/shoes/shoe-2.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Nike 360</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolores nulla rerum delectus porro mollitia laborum voluptates laudantium impedit esse eligendi minima aliquid ipsam libero. Eos error veritatis quae culpa!</p>
-                        <button class="btn-buy-now border-0 text-light"
-                            style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
-                            Now</button>
+                <div class="col-sm-4">
+                    <div class="card border-0 shadow h-100">
+                        <img src="images/shoes/shoe-2.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike 360</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolores
+                                nulla rerum delectus porro mollitia laborum voluptates laudantium impedit esse eligendi
+                                minima aliquid ipsam libero. Eos error veritatis quae culpa!</p>
+                            <button class="btn-buy-now border-0 text-light"
+                                style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
+                                Now</button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="images/shoes/shoe-3.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Red Airmax</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias obcaecati eaque, praesentium voluptates quasi tenetur officia dignissimos, ducimus architecto mollitia, commodi aspernatur aperiam! Cum nobis voluptate deserunt ducimus distinctio!</p>
-                        <button class="btn-buy-now border-0 text-light"
-                            style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
-                            Now</button>
+                <div class="col-sm-4">
+                    <div class="card border-0 shadow h-100">
+                        <img src="images/shoes/shoe-3.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Airmax</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                                alias obcaecati eaque, praesentium voluptates quasi tenetur officia dignissimos, ducimus
+                                architecto mollitia, commodi aspernatur aperiam! Cum nobis voluptate deserunt ducimus
+                                distinctio!</p>
+                            <button class="btn-buy-now border-0 text-light"
+                                style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
+                                Now</button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-      </section>
-      <section>
-        <div class="p-5">
-            <h1>Backpack</h1>
+            </div>
+        </section>
+        <section>
+            <div class="p-5">
+                <h1>Backpack</h1>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -193,11 +201,14 @@
                         <img src="images/bags/bag-1.png" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Red Bag</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, alias tempora quisquam veniam error adipisci debitis, nihil doloribus dignissimos possimus quasi. Soluta quos veritatis nobis numquam sequi voluptate repellat!</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                molestias, alias tempora quisquam veniam error adipisci debitis, nihil doloribus
+                                dignissimos possimus quasi. Soluta quos veritatis nobis numquam sequi voluptate
+                                repellat!</p>
                             <button class="btn-buy-now border-0 text-light"
                                 style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
                                 Now</button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -206,11 +217,13 @@
                         <img src="images/bags/bag-2.png" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Blue Bag</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolores nulla rerum delectus porro mollitia laborum voluptates laudantium impedit esse eligendi minima aliquid ipsam libero. Eos error veritatis quae culpa!</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolores
+                                nulla rerum delectus porro mollitia laborum voluptates laudantium impedit esse eligendi
+                                minima aliquid ipsam libero. Eos error veritatis quae culpa!</p>
                             <button class="btn-buy-now border-0 text-light"
                                 style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
                                 Now</button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -219,31 +232,37 @@
                         <img src="images/bags/bag-3.png" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Black Bag</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias obcaecati eaque, praesentium voluptates quasi tenetur officia dignissimos, ducimus architecto mollitia, commodi aspernatur aperiam! Cum nobis voluptate deserunt ducimus distinctio!</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                                alias obcaecati eaque, praesentium voluptates quasi tenetur officia dignissimos, ducimus
+                                architecto mollitia, commodi aspernatur aperiam! Cum nobis voluptate deserunt ducimus
+                                distinctio!</p>
                             <button class="btn-buy-now border-0 text-light"
                                 style="background-color:#FF5599; border-radius: 10px; width: 130px; padding: 8px;">Buy
                                 Now</button>
-    
+
                         </div>
                     </div>
                 </div>
 
-      </section>
-      <br><br><br>
-    <div style="background-color:#FCEBE9;">
-        <div class="p-5" style="margin-left: 350px;" >
-            <h1>LET'S STAY IN TOUCH</h1>
-            <p>Get updates on sales, specials and more</p>
-            <input class="form-control w-50" type="text" placeholder="Your Email"> 
-    
+        </section>
+        <br><br><br>
+        <div class="container panda-bg-info d-flex justify-content-center align-items-center rounded-3"
+            style="background-color:#FCEBE9; height: 300px;">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input class="form-control" type="text" placeholder="Your Email">
+
+            </div>
         </div>
-     </div>
     </main>
     <footer class="mt-5">
-       <div class="text-center">
-           <p>©2022. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
-       </div>
+        <div class="text-center">
+            <p>©2022. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+        </div>
     </footer>
+
+
 
 
     <script src="css/js/bootstrap.bundle.min.js"></script>
